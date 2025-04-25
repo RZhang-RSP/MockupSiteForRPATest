@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Website - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js/home.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Training Portal</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#" id="home-link">Home</a></li>
+                    <li><a href="document.html" id="documents-link">Documents</a></li>
+                    <li><a href="#" id="logout-link">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Upcoming Training Events</h1>
+            <p>Join our interactive training sessions to enhance your web automation skills. Learn the latest techniques and best practices from industry experts.</p>
+            <a href="#events" class="btn btn-primary">View Events</a>
+        </div>
+    </section>
+
+    <main class="container home-content">
+        <section id="events" class="upcoming-events">
+            <h2>Featured Events</h2>
+            <div class="featured-events" id="events-container">
+                <!-- Events will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <section class="registration-form">
+            <h2>Register for an Event</h2>
+            <form id="event-registration-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="event-select">Select Event</label>
+                    <select id="event-select" name="event" required>
+                        <!-- Options will be dynamically loaded -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Additional Notes</label>
+                    <textarea id="notes" name="notes" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Register</button>
+            </form>
+            <div id="registration-message" class="message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Training Portal</h3>
+                    <p>Providing quality training and resources for web automation professionals.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="document.html">Documents</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@trainingportal.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Training Street, Learning City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <p style="text-align: center; margin-top: 1.5rem;">© 2025 Training Portal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

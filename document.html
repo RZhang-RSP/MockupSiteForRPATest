@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Website - Documents</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js/document.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Training Portal</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="home.html" id="home-link">Home</a></li>
+                    <li><a href="#" id="documents-link">Documents</a></li>
+                    <li><a href="#" id="logout-link">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Training Documents</h1>
+        <p>Browse through our collection of training materials and resources.</p>
+
+        <div class="document-table-container">
+            <table class="document-table" id="document-table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Date</th>
+                        <th>Download</th>
+                    </tr>
+                </thead>
+                <tbody id="document-table-body">
+                    <!-- Table content will be dynamically loaded -->
+                </tbody>
+            </table>
+            <div id="no-files-message" class="no-files" style="display: none;">No file to download</div>
+            <div class="pagination" id="pagination">
+                <!-- Pagination will be dynamically generated -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Training Portal</h3>
+                    <p>Providing quality training and resources for web automation professionals.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="#">Documents</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@trainingportal.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Training Street, Learning City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <p style="text-align: center; margin-top: 1.5rem;">© 2025 Training Portal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
