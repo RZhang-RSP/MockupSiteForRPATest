@@ -73,6 +73,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // Get form values
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
+        const gender = document.querySelector('input[name="gender"]:checked').value;
+        const birthday = document.getElementById('birthday').value;
         const event = document.getElementById('event-select').value;
         const notes = document.getElementById('notes').value;
         
